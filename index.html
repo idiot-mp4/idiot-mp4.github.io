@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <head>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
 
         body {
             color: #fff;
-            background: #331111;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background: src("img/bg.jpeg");
         }
 
         p {
@@ -14,9 +18,25 @@
             padding: 0px;
             font-family: 'Hind Siliguri', sans-serif;
         }
+
+        .main {
+            position: fixed;
+            left: 5%;
+            right: 5%;
+            top: 8%;
+            bottom: 8%;
+            border-radius: 16px;
+            background-color: rgb(0, 0, 0, 0.5);
+            padding: 20px;
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+        }
     </style>
 </head>
+
 <body>
-    <p>Well, you've landed here.</p>
-    <p>Nothing's really here yet, check back later!</p>
+    <div class="main">
+        <p>Well, you've landed here.</p>
+        <p>Nothing's really here yet, check back later!</p>
+    </div>
 </body>
